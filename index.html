@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1>🎓 Student Management System</h1>
+
+<div class="container">
+    <div class="card">
+        <form action="/add" method="POST">
+
+            <h2>Welcome To The Page</h2>
+
+            <input type="text" name="student_name" placeholder="Enter name" required>
+            <input type="text" name="student_section" placeholder="Enter section" required>
+            <input type="text" name="student_grade" placeholder="Enter marks" required>
+
+            <select name="student_branch" required>
+                <option value="">Select Branch</option>
+                <option value="CSE">CSE</option>
+                <option value="CSE-AIML">CSE-AIML</option>
+                <option value="CSE-AIDS">CSE-AIDS</option>
+                <option value="OTHER">OTHER</option>
+            </select>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
