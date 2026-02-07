@@ -1,0 +1,64 @@
+body {
+margin: 0;
+background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1{
+    text-align: center;
+
+}
+
+/* Center container */
+.container {
+    display: flex;
+    justify-content: center;   /* horizontal center */
+    align-items: center;       /* vertical center */
+    height: 100vh;             /* full screen height */
+}
+
+/* Card styling */
+.card {
+    width: 300px;
+    padding: 100px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px gray;
+    height: 100;
+}
+input[type=text], select {
+width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+    width: 120px;        /* small size */
+    padding: 10px;
+    margin: 50px auto 0; /* center below branch */
+    display: block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+button:hover {
+  background-color: black;
+}
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
